@@ -39,6 +39,10 @@ a{
     text-decoration: none;
     color: inherit;
 }
+button{
+    padding: 0;
+    border: none;
+}
 ul{
     list-style: none;
 }
@@ -68,8 +72,22 @@ body{
 .logo {
     margin-bottom: 35px;
 }
-.menu {
+/* burger */
+.menu__btn{
+    display: none;
+    width: 40px;
+    height: 20px;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-between;
 }
+.menu__btn span{
+    background-color: #000;
+    height: 2px;
+    width: 100%;
+}
+/* ------ */
+
 .menu__list {
     display: flex;
     align-items: center;
@@ -140,5 +158,52 @@ body{
     line-height: normal;
     max-width: 704px;
     margin: 150px auto;
+}
 
+@media (max-width: 1000px) {  
+    .user-actions__item-search{
+        margin-left: 30px;
+}
+    .menu {
+        margin-right: auto;
+}
+    .menu__list {
+        margin-left: 60px;
+}
+    .logo{
+        margin-bottom: 0;
+}
+    .header__inner{
+        min-height: auto;
+    }
+    .blockquote__text {
+        margin-top: 120px;
+        margin-bottom: 135px;
+    }
+}
+@media (max-width: 860px) { 
+    .menu__list{
+        display: none;
+    } 
+    .menu__btn{
+        display: flex;
+    }
+    .menu{
+        order: -1;
+        margin-right: 0;
+    }
+    .logo{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (max-width: 768px) {
+    .header__inner{
+        padding-left: 64px;
+        padding-right: 64px;
+    }  
+}
+@media (max-width: 480px) {  
+}
+@media (max-width: 360px) {  
 }
