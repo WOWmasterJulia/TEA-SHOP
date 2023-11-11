@@ -6,6 +6,35 @@ html{
 *::before{
     box-sizing: inherit;
 }
+:root {
+    /* text color */
+    --title-text-color: #151618;
+    /* --light-text-color: #fbfbfb;
+    --text-white-color: #fff;
+    --primary-text-color: #434455; 
+    --text-footer-white: #E7E9FC; */
+
+    /* --input-grey: #d8dbdd;
+    --phone-grey: #738593;
+    --accent-color: #76b703;
+    --icons-bg: #CCCCCC; */
+
+    /* bg color */
+    /* --primary-bg-color: #fff;
+    --footer-bg-color: #253a4a;;
+    --second-bg-color: #ebebeb; */
+
+    /* fonts */
+    --base-fonts-family: 'Open Sans', sans-serif;
+    --deco-fonts-family: 'Cormorant', serif;
+     
+
+    /* others */
+    /* --header-idx: 100; 
+    --modal-idx: 1000;
+    --anim-fast: 1300ms ease;
+    --anim-slow: 1800ms ease-out; */
+}
 a{
     text-decoration: none;
     color: inherit;
@@ -20,7 +49,11 @@ ul{
     padding-right: 20px;
 }
 body{
-
+    font-family: var(--base-fonts-family);
+    color: var(--title-text-color);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
 }
 .header {
 }
@@ -41,6 +74,9 @@ body{
     display: flex;
     align-items: center;
     gap: 0 65px;
+    font-weight: 400;
+    font-size: 18px;
+    margin-left: 85px;
 }
 .menu__item {
 }
