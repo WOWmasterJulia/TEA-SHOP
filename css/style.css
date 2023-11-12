@@ -20,9 +20,9 @@ html{
     --icons-bg: #CCCCCC; */
 
     /* bg color */
-    /* --primary-bg-color: #fff;
-    --footer-bg-color: #253a4a;;
-    --second-bg-color: #ebebeb; */
+    /* --primary-bg-color: #fff; */
+    --footer-bg-color: #F7F2EA;
+    /* --second-bg-color: #ebebeb; */
 
     /* fonts */
     --base-fonts-family: 'Open Sans', sans-serif;
@@ -42,6 +42,7 @@ a{
 button{
     padding: 0;
     border: none;
+    background-color: transparent;
 }
 ul{
     list-style: none;
@@ -80,6 +81,9 @@ body{
     /* display: flex; */
     flex-direction: column;
     justify-content: space-between;
+}
+.mobile-nav, .menu__close {
+    display: none;
 }
 .menu__btn span{
     background-color: #000;
@@ -183,14 +187,56 @@ body{
 }
 @media (max-width: 860px) { 
     .menu__list{
-        display: none;
+        transform: translateY(-100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 480px;
+        margin: 0 auto;
+        background-color: var(--text-white-color);
+        display: block;
+        text-align: center;
+        padding-top: 60px;
+    }
+    .menu__list.menu__list--open{
+        transform: translateY(0%);
+    }
+    .menu__close-btn{
+        position: absolute;
+        top: 20px;
+        right: 20px;    
     } 
+    .menu__item{
+        margin-bottom: 30px;
+        font-size: 24px;
+        font-family: var(--deco-fonts-family);
+    }
+    .mobile-menu{
+        padding-top: 60px;
+        margin: 60px 30px;
+        border-top: 2px solid#F7F2EA;
+    }
+    .mobile-actions{
+        background-color: var(--footer-bg-color);
+        height: 60px;
+        padding: 0 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     .menu__btn{
         display: flex;
     }
+    .mobile-nav, .menu__close {
+        display: block;
+}
     .menu{
         order: -1;
         margin-right: 0;
+    }
+    .mobile-menu__item{
+        margin-bottom: 35px;
     }
     .logo{
         margin-left: auto;
@@ -232,6 +278,9 @@ body{
     }
     .logo img{
         width: 40px;
+    }
+    .menu__list{
+       width: 360px; 
     }
 }
 @media (max-width: 360px) { 
