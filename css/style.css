@@ -59,6 +59,7 @@ body{
     font-size: 20px;
     font-weight: 300;
     line-height: 1.5;
+    position: relative;
 }
 .header {
 }
@@ -78,9 +79,24 @@ body{
     display: none;
     width: 40px;
     height: 20px;
-    /* display: flex; */
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+.menu--close{
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 1;
+    transition: background-color .3s ease;
+}
+.menu--close.menu--open{
+    display: block;
 }
 .mobile-nav, .menu__close {
     display: none;
@@ -99,6 +115,8 @@ body{
     font-weight: 400;
     font-size: 18px;
     margin-left: 85px;
+    position: relative;
+    z-index: 3;
 }
 .menu__item {
 }
@@ -198,6 +216,7 @@ body{
         display: block;
         text-align: center;
         padding-top: 60px;
+        transition: transform .7s ease;
     }
     .menu__list.menu__list--open{
         transform: translateY(0%);
