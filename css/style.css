@@ -181,6 +181,28 @@ body{
     max-width: 704px;
     margin: 150px auto;
 }
+/* -----assortment------ */
+
+.assortment {
+    margin-bottom: 150px;
+}
+.container {
+}
+.assortment__list {
+}
+.assortment__item {
+}
+.assortment__img {
+}
+.assortment__name {
+}
+
+
+
+
+
+
+
 
 @media (max-width: 1000px) {  
     .user-actions__item-search{
