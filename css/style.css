@@ -245,6 +245,71 @@ body{
     font-weight: 600;
 }
 
+.main-blog {
+    padding: 150px 0;
+
+}
+.container {
+}
+.title {
+}
+.main_blog__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 58px;
+}
+.main-blog__item {
+    flex-basis: 542px;
+    
+}
+.main-blog__item-img {
+}
+.main-blog__item-content {
+}
+.main-blog__item-title {
+}
+.main-blog__item-author {
+}
+.main-blog__item-link {
+}
+.main-blog__link {
+}
+.mailing-list {
+}
+.mailing-list-title {
+}
+.mailing-list__inner {
+}
+.mailing-list__text {
+}
+.mailing-list__form {
+}
+.mailing-list__email {
+}
+.mailing-list__btn {
+}
+.checkbox {
+}
+.checkbox-style {
+}
+.checkbox__text {
+}
+.prioritise {
+}
+.prioritise__list {
+}
+.prioritise__item {
+}
+.prioritise__title {
+}
+.prioritise__text {
+}
+
+
+
+
+
+
 
 
 
