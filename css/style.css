@@ -318,25 +318,27 @@ body{
 }
 .mailing-list__text {
     line-height: 1.5;
+    flex-basis: 580px;
 
 }
 .mailing-list__form {
     display: flex;
     flex-wrap: wrap;
+    flex-basis: 580px;
 }
 .mailing-list__email {
     border: none;
     border-bottom: 1px solid #B8B58B;
     background-color: transparent;
     padding: 3px 15px;
-    width: 440px;
+    width: 438px;
     margin-right: 25px;
     font-family: var(--base-fonts-family);
     font-size: 20px;
     font-style: normal;
     font-weight: 300;
     line-height: 1.5;
-    color: var(--title-text-color)
+    color: var(--title-text-color);
 }
 .mailing-list__email::placeholder {
     font-family: var(--base-fonts-family);
@@ -347,25 +349,69 @@ body{
     color: #B8B58B;
 }
 .mailing-list__btn {
-
+    background-color: var(--primary-bg-color);
+    border: 1px solid var(--title-text-color);
+    font-family: var(--base-fonts-family);
+    padding: 12px 41px;
+    font-size: 20px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.mailing-list__label{
+    margin-top: 16px;
+    
+}
+.checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+    padding-left: 20px;
+}
+.checkbox:checked + .checkbox-style::before{
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background-color: var(--title-text-color);
+    top: 1px;
+    left: 1px;
+}
+.checkbox-style {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 1px solid var(--title-text-color);
+    margin-top: 5px;
+}
+.checkbox__text {
+    font-size: 13px;
+    padding-left: 20px;
 }
 
 /* ------ */
-.checkbox {
-}
-.checkbox-style {
-}
-.checkbox__text {
-}
 .prioritise {
+    padding: 150px 0;
 }
 .prioritise__list {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px 49px;
 }
 .prioritise__item {
 }
 .prioritise__title {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 300;
 }
 .prioritise__text {
+    margin-bottom: 30px;
+    font-weight: 600;
+
 }
 
 
