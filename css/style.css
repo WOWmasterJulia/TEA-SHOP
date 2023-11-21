@@ -9,35 +9,32 @@ html{
 :root {
     /* text color */
     --title-text-color: #151618;
-    /* --light-text-color: #fbfbfb;*/
     --text-white-color: #fff;
-    /*--primary-text-color: #434455; 
-    --text-footer-white: #E7E9FC; */
-
-    /* --input-grey: #d8dbdd;
-    --phone-grey: #738593;
-    --accent-color: #76b703;
-    --icons-bg: #CCCCCC; */
 
     /* bg color */
     --primary-bg-color: #fff;
     --second-bg-color: #F7F2EA;
-    /* --second-bg-color: #ebebeb; */
 
     /* fonts */
     --base-fonts-family: 'Open Sans', sans-serif;
     --deco-fonts-family: 'Cormorant', serif;
-     
-
-    /* others */
-    /* --header-idx: 100; 
-    --modal-idx: 1000;
-    --anim-fast: 1300ms ease;
-    --anim-slow: 1800ms ease-out; */
 }
-    .open{
-        background-color: #000;
-    }
+html, 
+body{
+    height: 100%;
+}
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main{
+    flex-grow: 1;
+}
+
+.open{
+    background-color: #000;
+}
 a{
     text-decoration: none;
     color: inherit;
