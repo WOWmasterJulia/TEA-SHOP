@@ -15,3 +15,13 @@ menuClose.addEventListener("click", () => {
     menuList.classList.remove("menu__list--open");
     menuShadow.classList.remove("menu--open");
 });
+
+
+document.querySelector('.change-theme').addEventListener('click', function () {
+    const currentTheme = document.body.className;
+    if (currentTheme === 'light-theme') {
+        document.body.className = 'dark-theme';
+    } else {
+        document.body.className = "light-theme";
+    }
+});

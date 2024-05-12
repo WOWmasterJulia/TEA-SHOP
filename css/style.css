@@ -62,14 +62,33 @@ ul{
 }
 body{
     font-family: var(--base-fonts-family);
-    color: var(--title-text-color);
+    /* color: var(--title-text-color); */
     font-size: 20px;
     font-weight: 300;
     /* line-height: 1.5; */
     line-height: normal;
     position: relative;
+    transition: background-color .3s ease;
 }
-.header {
+body.light-theme{
+    color: var(--title-text-color);
+    background-color: #fff;
+}
+body.dark-theme{
+    background-color: var(--title-text-color);
+    color: #fff;
+}
+.change-theme {
+    border: 1px solid var(--title-text-color);
+    color: var(--title-text-color);
+    padding: 12px 20px 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+body.dark-theme .change-theme{
+    border: 1px solid #fff;
+    color: #fff;
 }
 
 .header__inner {
@@ -179,7 +198,7 @@ body{
 }
 .blockquote__text {
     text-align: center;
-    color: var(--title-text-color);
+    /* color: var(--title-text-color); */
     font-family: var(--deco-fonts-family);
     font-size: 40px;
     font-style: italic;
@@ -219,8 +238,10 @@ body{
     background-color: var(--second-bg-color);
     padding: 60px 0;
 }
-.container {
+.dark-theme .reviews {
+    color: var(--title-text-color);
 }
+
 .title {
 }
 .reviews__list {
@@ -295,8 +316,11 @@ body{
     justify-content: center;
     margin: 72px auto 0;
     border: 1px solid var(--title-text-color);
-    background: var(--primary-bg-color);
+    /* background: var(--primary-bg-color); */
     width: 152px;
+}
+.dark-theme .main-blog__link{
+    border: 1px solid #fff;
 }
 .mailing-list {
     padding: 100px 0;
@@ -305,6 +329,10 @@ body{
     background-repeat: no-repeat;
     background-position: bottom right;
 }
+.dark-theme .mailing-list {
+    color: var(--title-text-color);
+}
+
 .mailing-list__title {
     text-align: left;
     margin-bottom: 50px;
@@ -353,6 +381,9 @@ body{
     font-size: 20px;
     font-weight: 300;
     cursor: pointer;
+}
+.dark-theme .mailing-list__btn {
+    background-color: transparent;
 }
 .mailing-list__label{
     margin-top: 16px;
@@ -426,6 +457,9 @@ body{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 0 40px;
+}
+.dark-theme .footer__inner {
+    color: var(--title-text-color);
 }
 .footer__products {
 }
@@ -523,6 +557,9 @@ body{
 }
 .footer__bottom {
     display: flex;
+}
+.dark-theme .footer__bottom {
+    color: var(--title-text-color);
 }
 .mastercard{
     margin-top: 10px;
