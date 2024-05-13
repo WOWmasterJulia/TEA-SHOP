@@ -101,6 +101,9 @@ body.dark-theme .change-theme{
 .logo {
     margin-bottom: 35px;
 }
+.dark-theme .logo{
+    fill: #fff;
+}
 /* burger */
 .menu__btn{
     display: none;
@@ -533,6 +536,9 @@ body.dark-theme .change-theme{
     display: block;
     margin-bottom: 20px;
 }
+.footer__nav-phone:hover, .footer__nav-email:hover {
+    color: #754E29;
+}
 .footer__nav-phone::before, .footer__nav-email::before {
     content: '';
     position: absolute;
@@ -547,6 +553,9 @@ body.dark-theme .change-theme{
     width: 21px;
     height: 21px;
 }
+/* .footer__nav-phone::before:hover, .footer__nav-email::before:hover {
+    background-image: #754E29;
+} */
 .footer__nav-email {
 }
 .footer__social {
@@ -561,8 +570,9 @@ body.dark-theme .change-theme{
 }
 .footer__social-item {
 }
-.footer__social-link {
+.footer__social-link svg:hover{
     /* display: grid; */
+    fill:#754E29;
 }
 .footer__bottom {
     display: flex;
