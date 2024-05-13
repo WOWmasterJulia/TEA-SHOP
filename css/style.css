@@ -145,9 +145,11 @@ body.dark-theme .change-theme{
     position: relative;
     z-index: 3;
 }
-.menu__item {
+.menu__item:hover {
+    /* color: #754E29; */
 }
-.menu__link {
+.menu__link:hover {
+    color: #754E29;
 }
 .user-actions {
     display: flex;
@@ -159,7 +161,14 @@ body.dark-theme .change-theme{
 .user-actions__item-search{
     margin-left: 80px;
 }
-.user-action__link {
+.user-action__link:hover svg  path {
+    fill: #754E29;
+}
+.dark-theme .user-action__link svg path{
+    fill:  #fff;
+}
+.dark-theme .user-action__link:hover svg path{
+    fill: #754E29;
 }
 /* ------ */
 .main {
