@@ -114,6 +114,7 @@ body.dark-theme .change-theme{
     position: relative;
     z-index: 2;
 }
+
 .menu--close{
     display: none;
     position: absolute;
@@ -135,6 +136,9 @@ body.dark-theme .change-theme{
     background-color: #000;
     height: 2px;
     width: 100%;
+}
+.dark-theme .menu__btn span{
+    background-color: #fff;
 }
 /* ------ */
 
@@ -174,6 +178,7 @@ body.dark-theme .change-theme{
     fill: #754E29;
 }
 /* ------ */
+
 /* перемикач теми */
 
 .icon-moon {
@@ -182,7 +187,7 @@ body.dark-theme .change-theme{
   top: 50%;
   transform: translateY(-50%);
   /* fill: #111; */
-  fill: #fff;
+  fill: #151618;
 }
 
 .icon-sun {
@@ -223,8 +228,8 @@ body.dark-theme .change-theme{
   /* box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.1); */
   -webkit-transition: 400ms;
   transition: 400ms;
-  border: 1px solid #000;
-  background-color: #000;
+  border: 1px solid #151618;
+  background-color: #FFF;
 }
 
 .slider:before {
@@ -237,9 +242,17 @@ body.dark-theme .change-theme{
   bottom: 1px;
   top: 1px;
   /* background-color: white; */
-  background-color: white;
+  background-color: #FFF;
   -webkit-transition: 400ms;
   transition: 400ms;
+}
+.dark-theme .slider:before{
+ background-color: #151618;
+ 
+}
+.dark-theme .slider{
+ 
+  border: 1px solid #Fff;
 }
 input:checked + .slider,
 input:checked + .slider {
@@ -266,6 +279,8 @@ input:checked + .slider:before {
   position: relative;
 } */
 /* ----------- */
+
+
 .main {
 }
 .top {
@@ -702,7 +717,8 @@ a.footer__products-link:hover, a.footer__company-link:hover {
         margin-bottom: 30px;
     }  */
     .user-actions__item-search{
-        margin-left: 30px;
+        /* margin-left: 30px; */
+        margin-left: 10px;
 }
     .menu {
         margin-right: auto;
@@ -785,6 +801,11 @@ a.footer__products-link:hover, a.footer__company-link:hover {
         width: 270px;
     }
 }
+@media (max-width: 900px) {
+    .menu__list {
+            gap: 0 40px;
+    }
+}
 @media (max-width: 860px) { 
     .menu__list{
         transform: translateY(-100%);
@@ -799,6 +820,9 @@ a.footer__products-link:hover, a.footer__company-link:hover {
         text-align: center;
         padding-top: 60px;
         transition: transform .7s ease;
+    }
+    .dark-theme .menu__list{
+        background-color: #151618;
     }
     .menu__list.menu__list--open{
         transform: translateY(0%);
@@ -825,6 +849,9 @@ a.footer__products-link:hover, a.footer__company-link:hover {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+    .dark-theme li.mobile-actions__item svg{
+        fill: #754E29;
     }
     .menu__btn{
         display: flex;

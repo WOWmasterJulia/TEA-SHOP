@@ -69,15 +69,27 @@
                 <ul class="mobile-actions">
                   <li class="mobile-actions__item">
                     <a href="#" class="mobile-action__link">
-                      <img src="/images/cart.svg" alt=""></a>
+                      <!-- <img src="/images/cart.svg" alt=""> -->
+                      <svg class="icon" width="20" height="22">
+                      <use href="./images/symbol-defs.svg#icon-cart"></use>
+            </svg>
+                    </a>
                   </li>
                   <li class="mobile-actions__item">
                     <a href="#" class="mobile-action__link">
-                      <img src="/images/user.svg" alt=""></a>
+                      <!-- <img src="/images/user.svg" alt=""> -->
+                      <svg class="icon" width="18" height="22">
+                      <use href="./images/symbol-defs.svg#icon-user"></use>
+            </svg>
+                    </a>
                   </li>
                   <li class="mobile-actions__item">
                     <a href="#" class="mobile-action__link">
-                      <img src="/images/search.svg" alt=""></a>
+                      <!-- <img src="/images/search.svg" alt=""> -->
+                      <svg class="icon" width="22" height="22">
+                      <use href="./images/symbol-defs.svg#icon-search"></use>
+            </svg>
+                    </a>
                   </li>
                 </ul>
               </li>
@@ -111,10 +123,22 @@
                 </form>             
               </search> -->
             </li>
+            <li class="user-actions__item">
+              <label class="switch">
+                <svg class="icon-sun" width="19" height="19">
+                  <use href="./images/symbol-defs.svg#icon-sun"></use>
+                </svg>
+                <input type="checkbox" />
+                <span class="slider round"></span>
+                <svg class="icon-moon" width="12" height="12">
+                  <use href="./images/symbol-defs.svg#icon-moon-fill"></use>
+                </svg>
+              </label>
+            </li>
           </ul>
           <!-- <button class="change-theme">change theme</button> -->
 
-          <label class="switch">
+          <!-- <label class="switch">
             <svg class="icon-sun" width="19" height="19">
               <use href="./images/symbol-defs.svg#icon-sun"></use>
             </svg>
@@ -123,11 +147,12 @@
             <svg class="icon-moon" width="12" height="12">
               <use href="./images/symbol-defs.svg#icon-moon-fill"></use>
             </svg>
-          </label>
+          </label> -->
 
         </div>
       </div>
     </header>
+
     <main class="main">
       <section class="top">
         <div class="container">
@@ -204,6 +229,7 @@
           </ul>
         </div>
       </section>
+
       <section class="main-blog">
         <div class="container">
           <h2 class="title">Our Tea Blog</h2>
@@ -244,6 +270,7 @@
           <a href="#" class="main-blog__link">View all</a>
         </div>
       </section>
+
       <section class="mailing-list">
         <div class="container">
           <h2 class="title mailing-list__title">Want to know more?</h2>
@@ -261,6 +288,7 @@
           </div>
         </div>
       </section>
+
       <section class="prioritise">
         <div class="container">
           <h2 class="title">We Prioritise</h2>
@@ -289,6 +317,7 @@
         </div>
       </section>
     </main>
+
     <footer class="footer">
       <div class="container">
         <div class="footer__inner">
