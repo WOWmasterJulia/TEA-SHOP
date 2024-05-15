@@ -70,6 +70,23 @@ body{
     position: relative;
     transition: background-color .3s ease;
 }
+/* Липкий хедер */
+body.light-theme.header__top{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* background-color: #fff; */
+    z-index: 10;
+}
+.header {
+    /* background-color: #fff; */
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10; */
+}
 body.light-theme{
     color: var(--title-text-color);
     background-color: #fff;
@@ -90,6 +107,7 @@ body.dark-theme .change-theme{
     border: 1px solid #fff;
     color: #fff;
 }
+
 
 .header__inner {
     display: flex;
